@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+}
+
+/*------- Base Styles-------*/
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+}
+
+h2 {
+	font-size: 125%;
+}
+
+p {
+	font-family: sans-serif;
+	padding: 15px;
+	clear: right;
+}
+
+#heading {
+	text-align: center;
+}
+
+
+/*------- Menu Boxes Section -------*/
+
+#box-menu1 {
+	border: 1px black solid;
+	background-color: brown;
+}
+
+#box-menu2 {
+	border: 1px black solid;
+	background-color: lightblue;
+}
+#box-menu3 {
+	border: 1px black solid;
+	background-color: green;
+}
+
+/*------- Section Titles -------*/
+#chicken-label {
+	text-align: center;
+	border: 1px black solid;
+	width: 33.33%;
+	background-color: orange;
+	margin-top: 0;
+	float: right;
+}
+
+#beef-label {
+	text-align: center;
+	border: 1px black solid;
+	width: 33.33%;
+	background-color: red;
+	margin-top: 0;
+	float: right;
+}
+
+#sushi-label {
+	text-align: center;
+	border: 1px black solid;
+	width: 33.33%;
+	background-color: yellow;
+	margin-top: 0;
+	float: right;
+}
+
+/*------- Media Queries -------*/
+
+/*------- Desktop View -------*/
+
+@media (min-width: 992px) {
+	.box1, .box2, .box3 {
+		float: left;
+		width: 33.33%;
+	}
+
+	#box-menu1 {
+		margin: 10px;
+	}
+
+	#box-menu2 {
+		margin: 10px;
+	}
+
+	#box-menu3 {
+		margin: 10px;
+	}
+}
+
+/*------- Tablet View -------*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.box1, .box2 {
+		float: left;
+		width: 50%;
+	}
+
+	.box3 {
+		float: left;
+	}
+
+	#box-menu1 {
+		margin-right: 15px;
+	}
+
+	#box-menu2 {
+		margin-left: 15px;
+	}
+
+	#box-menu3 {
+		margin-top: 15px;
+	}
+}
+
+/*------- Mobile Phone View -------*/
+@media (max-width: 767px) {
+
+	.box1, .box2, .box3 {
+		width: 100%;
+	}
+	#box-menu1 {
+		margin: 10px;
+	}
+
+	#box-menu2 {
+		margin: 10px;
+	}
+
+	#box-menu3 {
+		margin: 10px;
+	}
+}
